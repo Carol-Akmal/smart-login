@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Login System</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="vh-100 d-flex justify-content-center align-items-center">
+
+  <!-- Login Box -->
+  <div class="login-box" id="loginBox">
+    <h2>Smart Login System</h2>
+
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" oninput="validateInputs(this)">
+      <label for="loginEmail">Enter your Email</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="loginPassword" placeholder="Password" oninput="validateInputs(this)">
+      <label for="loginPassword">Enter your Password</label>
+    </div>
+
+    <div class="d-grid gap-2 mb-3">
+      <button class="btn btn-primary" type="button" onclick="addobj()">Login</button>
+    </div>
+
+    <p>Don’t have an account? <a href="#" id="goToSignUp">Sign Up</a></p>
+  </div>
+
+  <!-- Sign Up Box -->
+  <div class="sign-box d-none" id="signBox">
+    <h2>Create Account</h2>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="signName" placeholder="name" oninput="validateInputs(this)">
+      <label for="signName">Enter your Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="signEmail" placeholder="name@example.com" oninput="validateInputs(this)">
+      <label for="signEmail">Enter your Email</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="signPassword" placeholder="Password" oninput="validateInputs(this)">
+      <label for="signPassword">Enter your Password</label>
+    </div>
+
+    <div class="d-grid gap-2 mb-3">
+      <button class="btn btn-primary" type="button"  onclick="addobj()" >Sign Up</button>
+    </div>
+
+    <p>Already have an account? <a href="#" id="goToLogin">Login</a></p>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
